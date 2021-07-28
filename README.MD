@@ -38,3 +38,14 @@ kubectl get svc -n argocd argocd-server -o yaml
 # password
 
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+EWRXBktUSPIKoQwT
+
+# nginx-staging created
+
+kubectl apply -f https://raw.githubusercontent.com/GuschinS/exercise-5.17/master/nginx-deployment/argocd-helm-nginx-staging.yaml
+
+# nginx-prod created
+
+kubectl apply -f https://raw.githubusercontent.com/GuschinS/exercise-5.17/master/nginx-deployment/argocd-helm-nginx-prod.yaml
+
