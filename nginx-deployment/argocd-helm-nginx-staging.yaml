@@ -12,6 +12,6 @@ spec:
     helm:
       valueFiles:
       - values-staging.yaml
-    path: solutions/helm/nginx-deployment
-    repoURL: https://github.com/udacity/nd064_course_1
+    path: nginx-deployment
+    repoURL: https://github.com/GuschinS/exercise-5.17
     targetRevision: HEAD
